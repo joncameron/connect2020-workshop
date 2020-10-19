@@ -9,3 +9,5 @@ Item.create({ title: "My video test",
               streams: { "240p" => "http://localhost:3333/samvera/240p.mp4/index.m3u8", 
                          "480p" => "http://localhost:3333/samvera/480p.mp4/index.m3u8",
                          "1080p" => "http://localhost:3333/samvera/1080p.mp4/index.m3u8"}})
+
+User.create(email: "user@samvera.org", password: "connect2020")
