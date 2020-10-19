@@ -1,24 +1,19 @@
-# README
+# Connect 2020 Workshop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Build web and nginx images:
 
-Things you may want to cover:
+`docker-compose build`
 
-* Ruby version
+Video.js hosted CSS
 
-* System dependencies
+```
+<link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@silvermine/videojs-quality-selector/dist/css/quality-selector.css" rel="stylesheet">
+```
 
-* Configuration
+Video.js hosted JS
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+<script src="https://unpkg.com/@silvermine/videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js"></script>
+```
