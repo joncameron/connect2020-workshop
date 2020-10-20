@@ -1,8 +1,18 @@
 # Connect 2020 Workshop
 
-Build web and nginx images:
+1. Build web and nginx images
 
 `docker-compose build`
+
+2. Run the stack
+
+`docker-compose up`
+
+3. Seed the DB
+
+`docker-compose exec web rake db:seed`
+
+# Resources
 
 Video.js hosted CSS
 

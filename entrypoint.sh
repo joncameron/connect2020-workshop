@@ -7,5 +7,8 @@ rm -f /myapp/tmp/pids/server.pid
 # Install gem
 bundle install
 
+rake db:create
+rake db:migrate
+
 # Then exec the container's main process (what's set as CMD in the Dockerfile).
 exec "$@"
