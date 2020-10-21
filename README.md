@@ -22,6 +22,10 @@
 
 3. Finally we'll add adaptive streaming. See PR https://github.com/avalonmediasystem/connect2020-workshop/pull/5
 
+## Workshop script with code
+
+If you prefer copy-pasting over typing, the full workshop script with code is available here https://gist.github.com/phuongdh/a1e48c8f2beae16ff594adc419571a08
+
 ## Resources
 
 Video.js hosted CSS
