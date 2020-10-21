@@ -5,9 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Item.create({ title: "My video test", 
-              streams: { "240p" => "http://localhost:3333/samvera/bunny/240p.mp4/index.m3u8", 
-                         "480p" => "http://localhost:3333/samvera/bunny/480p.mp4/index.m3u8",
-                         "1080p" => "http://localhost:3333/samvera/bunny/1080p.mp4/index.m3u8"}})
+Item.create({ title: "My first video item", 
+              streams: [{ label: "1080p", url: "http://localhost:3333/samvera/bunny/1080p.mp4/index.m3u8", bitrate: 1422*1024 },
+                        { label: "480p", url: "http://localhost:3333/samvera/bunny/480p.mp4/index.m3u8", bitrate: 1353*1024 },
+                        { label: "240p", url: "http://localhost:3333/samvera/bunny/240p.mp4/index.m3u8", bitrate: 627*1024 }]})
 
 User.create(email: "user@samvera.org", password: "connect2020")
