@@ -1,6 +1,8 @@
-# Connect 2020 Workshop
+# Connect 2020 Workshop - Build a simple media streaming Rails app
 
-1. Build web and nginx images
+## Getting started
+
+1. Build Docker images
 
 `docker-compose build`
 
@@ -12,7 +14,15 @@
 
 `docker-compose exec web rake db:seed`
 
-# Resources
+## Progression
+
+1. Starting with a scaffolded Rails app, we'll add a media player and a streaming service. See PR https://github.com/avalonmediasystem/connect2020-workshop/pull/2
+
+2. Next we'll add token-based authorization to the streams. See PR https://github.com/avalonmediasystem/connect2020-workshop/pull/3
+
+3. Finally we'll add adaptive streaming. See PR https://github.com/avalonmediasystem/connect2020-workshop/pull/5
+
+## Resources
 
 Video.js hosted CSS
 
