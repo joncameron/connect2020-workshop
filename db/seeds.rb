@@ -5,7 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Item.create({ title: "My first video item", 
+Item.create({ title: "Skyline", 
+    streams: [{ label: "High", url: "http://localhost:3333/samvera/skyline/skyline.high.mp4/index.m3u8", bitrate: 1422*1024 },
+              { label: "Medium", url: "http://localhost:3333/samvera/skyline/skyline.medium.mp4/index.m3u8", bitrate: 1353*1024 },
+              { label: "Low", url: "http://localhost:3333/samvera/skyline/skyline.low.mp4/index.m3u8", bitrate: 627*1024 }]})
+
+Item.create({ title: "Cats", 
+streams: [{ label: "1080p", url: "http://localhost:3333/samvera/cats/cats.high.mp4/index.m3u8", bitrate: 1422*1024 },
+            { label: "480p", url: "http://localhost:3333/samvera/cats/cats.medium.mp4/index.m3u8", bitrate: 1353*1024 },
+            { label: "240p", url: "http://localhost:3333/samvera/cats/cats.low.mp4/index.m3u8", bitrate: 627*1024 }]})
+
+Item.create({ title: "Big Buck Bunny", 
               streams: [{ label: "1080p", url: "http://localhost:3333/samvera/bunny/1080p.mp4/index.m3u8", bitrate: 1422*1024 },
                         { label: "480p", url: "http://localhost:3333/samvera/bunny/480p.mp4/index.m3u8", bitrate: 1353*1024 },
                         { label: "240p", url: "http://localhost:3333/samvera/bunny/240p.mp4/index.m3u8", bitrate: 627*1024 }]})
